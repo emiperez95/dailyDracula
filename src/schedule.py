@@ -66,7 +66,6 @@ def format_message(entry: dict, post_dt: datetime) -> tuple[str, list[dict]]:
     location = entry.get("location")
     loc_suffix = f", {location}" if location else ""
     heading = f":scroll: _{date_label} {NOVEL_YEAR}{loc_suffix} · {entry['title']}_"
-    footer = ":drop_of_blood: _Reply in thread to discuss._"
 
     fallback_text = f"Dracula — {date_label} {NOVEL_YEAR}: {entry['title']}"
     blocks: list[dict] = [
@@ -75,8 +74,6 @@ def format_message(entry: dict, post_dt: datetime) -> tuple[str, list[dict]]:
     ]
     for chunk in chunk_text(body):
         blocks.append({"type": "section", "text": {"type": "mrkdwn", "text": chunk}})
-    blocks.append({"type": "divider"})
-    blocks.append({"type": "context", "elements": [{"type": "mrkdwn", "text": footer}]})
     return fallback_text, blocks
 
 

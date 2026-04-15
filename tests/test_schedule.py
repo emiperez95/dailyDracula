@@ -61,7 +61,7 @@ def test_format_message_produces_blocks_and_fallback():
     text, blocks = format_message(entry, dt)
     assert "Dracula" in text and "3 May" in text and "1893" in text
     assert blocks[0]["type"] == "context"
-    assert blocks[-1]["type"] == "context"
+    assert blocks[-1]["type"] == "section"
     body_chunks = [b for b in blocks if b["type"] == "section"]
     assert any("Bistritz" in b["text"]["text"] for b in body_chunks)
 

@@ -69,7 +69,7 @@ def fetch_text() -> str:
 
 
 def normalize(text: str) -> str:
-    # Strip Gutenberg wrapper
+    """Strip the Gutenberg wrapper; leave smart quotes intact for display."""
     try:
         s = text.index(START_MARK)
         s = text.index("\n", s) + 1
@@ -77,12 +77,33 @@ def normalize(text: str) -> str:
         text = text[s:e]
     except ValueError:
         pass
-
-    # Smart quotes, curly apostrophe, em-dash
-    text = text.replace("\u201c", '"').replace("\u201d", '"')
-    text = text.replace("\u2018", "'").replace("\u2019", "'")
-    # Keep em-dashes as-is; they appear in prose. The JOURNAL_RE handles both.
     return text
+
+
+def parse_location(extra: str) -> str | None:
+    """From the `extra` suffix of a date anchor (e.g. `. Bistritz`, `, morning`,
+    `.`), return the location if one is present, else None.
+
+    Period-led extras are treated as locations; comma-led extras are time
+    qualifiers (`, morning`, `, before morning`) and discarded.
+    """
+    s = extra.strip()
+    if not s:
+        return None
+    if s.startswith(","):
+        return None
+    s = s.lstrip(".").strip()
+    # Drop trailing period/comma and surrounding italic/space cruft.
+    s = s.rstrip(".,").strip()
+    if not s:
+        return None
+    # Guard against weird matches: require the first char to be uppercase.
+    if not s[0].isupper():
+        return None
+    # Time-of-day qualifiers masquerading as locations.
+    if s.lower() in {"night", "morning", "evening", "afternoon", "noon", "midnight", "later", "continued"}:
+        return None
+    return s
 
 
 def clean_title(raw: str) -> str:
@@ -100,10 +121,28 @@ def clean_title(raw: str) -> str:
     s = s.strip("_").strip()
     # Strip trailing punctuation
     s = s.rstrip(".,").strip()
-    # Title-case if all-caps (preserving `'s` / `'S`)
+    # Title-case if all-caps, preserving `'s` / `'S` for both straight and
+    # curly apostrophes (Gutenberg uses `\u2019`). Also lowercase common
+    # function words when they appear mid-phrase.
     if s and s == s.upper():
-        s = s.title().replace("'S", "'s")
+        s = s.title()
+        s = s.replace("'S", "'s").replace("\u2019S", "\u2019s")
+        small = {"From", "By", "To", "Of", "And", "The", "In", "On", "For", "A", "An"}
+        words = s.split(" ")
+        s = " ".join(
+            w if (i == 0 or w not in small) else w.lower()
+            for i, w in enumerate(words)
+        )
     return s
+
+
+def _prettify(text: str) -> str:
+    """Turn Gutenberg's `--` into a real em-dash for display. Only applied to
+    prose text, not to anchor lines (those are already consumed by the regexes).
+    """
+    # Collapse three-hyphen typos first, then two-hyphen → em-dash.
+    text = text.replace("---", "\u2014").replace("--", "\u2014")
+    return text
 
 
 def _join_paragraphs(lines: list[str]) -> str:
@@ -116,7 +155,7 @@ def _join_paragraphs(lines: list[str]) -> str:
         else:
             paragraphs[-1].append(ln.strip())
     parts = [" ".join(p) for p in paragraphs if p]
-    return "\n\n".join(parts).strip()
+    return _prettify("\n\n".join(parts).strip())
 
 
 def _strip_chapter_heading(lines: list[str]) -> list[str]:
@@ -148,7 +187,7 @@ def parse(text: str) -> list[dict]:
     # to the most recent DATE anchor when the next DATE anchor appears
     # (or at end of file).
 
-    entries_by_date: dict[tuple[int, int], list[tuple[str, str]]] = defaultdict(list)
+    entries_by_date: dict[tuple[int, int], list[tuple[str, str, str | None]]] = defaultdict(list)
 
     current_source: str | None = None      # from a letter/telegram header
     current_chapter_title: str | None = None
@@ -162,7 +201,9 @@ def parse(text: str) -> list[dict]:
         body_lines = _strip_chapter_heading(pending["buf"])
         body = _join_paragraphs(body_lines)
         if body:
-            entries_by_date[pending["date"]].append((pending["title"], body))
+            entries_by_date[pending["date"]].append(
+                (pending["title"], body, pending.get("location"))
+            )
         pending = None
 
     i = 0
@@ -208,7 +249,12 @@ def parse(text: str) -> list[dict]:
             dd = int(m_j.group("day"))
             title = current_chapter_title or "Dracula"
             first_body = m_j.group("body").strip()
-            pending = {"date": (mm, dd), "title": title, "buf": [first_body] if first_body else []}
+            pending = {
+                "date": (mm, dd),
+                "title": title,
+                "location": parse_location(m_j.group("extra")),
+                "buf": [first_body] if first_body else [],
+            }
             current_source = None  # consumed
             i += 1
             continue
@@ -222,7 +268,12 @@ def parse(text: str) -> list[dict]:
             mm = MONTHS[m_q.group("month")]
             dd = int(m_q.group("day"))
             title = current_source or current_chapter_title or "Dracula"
-            pending = {"date": (mm, dd), "title": title, "buf": []}
+            pending = {
+                "date": (mm, dd),
+                "title": title,
+                "location": parse_location(m_q.group("extra")),
+                "buf": [],
+            }
             current_source = None
             i += 1
             continue
@@ -239,17 +290,22 @@ def parse(text: str) -> list[dict]:
     for (mm, dd) in sorted(entries_by_date.keys()):
         parts = entries_by_date[(mm, dd)]
         if len(parts) == 1:
-            title, body = parts[0]
+            title, body, location = parts[0]
         else:
             # Multiple sources on the same day; concatenate with sub-headers.
-            # Use the first source as the headline title; include each part
-            # labeled with its source.
+            # Use the first source as the headline title; take the first
+            # non-empty location as the day's location.
             title = parts[0][0]
+            location = next((loc for (_, _, loc) in parts if loc), None)
             body_chunks = []
-            for (src, txt) in parts:
+            for (src, txt, _loc) in parts:
                 body_chunks.append(f"*{src}*\n\n{txt}")
             body = "\n\n".join(body_chunks)
-        out.append({"date": f"{mm:02d}-{dd:02d}", "title": title, "body": body})
+        entry: dict = {"date": f"{mm:02d}-{dd:02d}", "title": title}
+        if location:
+            entry["location"] = location
+        entry["body"] = body
+        out.append(entry)
     return out
 
 

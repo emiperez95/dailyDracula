@@ -55,20 +55,27 @@ def chunk_text(s: str, size: int = BLOCK_TEXT_LIMIT) -> list[str]:
     return chunks
 
 
+NOVEL_YEAR = 1893  # in-story year for all entries
+
+
 def format_message(entry: dict, post_dt: datetime) -> tuple[str, list[dict]]:
-    # %-d is POSIX (macOS/Linux); on Windows we'd need %#d. Good enough.
-    date_label = post_dt.strftime("%B %-d")
-    header = f":closed_book: *Dracula — {date_label}* · _{entry['title']}_"
-    footer = ":speech_balloon: _Reply in thread to discuss._"
+    # %-d is POSIX (macOS/Linux); on Windows we'd need %#d.
+    date_label = post_dt.strftime("%-d %B")  # e.g. "3 May"
     body = entry["body"].strip()
 
-    fallback_text = f"Dracula — {date_label}: {entry['title']}"
+    location = entry.get("location")
+    loc_suffix = f", {location}" if location else ""
+    heading = f":scroll: _{date_label} {NOVEL_YEAR}{loc_suffix} · {entry['title']}_"
+    footer = ":drop_of_blood: _Reply in thread to discuss._"
+
+    fallback_text = f"Dracula — {date_label} {NOVEL_YEAR}: {entry['title']}"
     blocks: list[dict] = [
-        {"type": "section", "text": {"type": "mrkdwn", "text": header}},
+        {"type": "context", "elements": [{"type": "mrkdwn", "text": heading}]},
         {"type": "divider"},
     ]
     for chunk in chunk_text(body):
         blocks.append({"type": "section", "text": {"type": "mrkdwn", "text": chunk}})
+    blocks.append({"type": "divider"})
     blocks.append({"type": "context", "elements": [{"type": "mrkdwn", "text": footer}]})
     return fallback_text, blocks
 

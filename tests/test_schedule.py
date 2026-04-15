@@ -59,10 +59,10 @@ def test_format_message_produces_blocks_and_fallback():
     entry = {"date": "05-03", "title": "Jonathan Harker's Journal", "body": "3 May. Bistritz."}
     dt = datetime(2026, 5, 3, 10, 0, tzinfo=TZ)
     text, blocks = format_message(entry, dt)
-    assert "Dracula" in text and "May 3" in text
-    assert blocks[0]["type"] == "section"
+    assert "Dracula" in text and "3 May" in text and "1893" in text
+    assert blocks[0]["type"] == "context"
     assert blocks[-1]["type"] == "context"
-    body_chunks = [b for b in blocks if b["type"] == "section"][1:]
+    body_chunks = [b for b in blocks if b["type"] == "section"]
     assert any("Bistritz" in b["text"]["text"] for b in body_chunks)
 
 
@@ -124,7 +124,8 @@ def test_data_file_is_valid():
     assert len(data) >= 90, f"expected >=90 entries, got {len(data)}"
     seen_dates = set()
     for e in data:
-        assert set(e.keys()) == {"date", "title", "body"}
+        assert {"date", "title", "body"} <= set(e.keys())
+        assert set(e.keys()) <= {"date", "title", "body", "location"}
         m, d = parse_md(e["date"])
         assert 1 <= m <= 12 and 1 <= d <= 31
         assert e["date"] not in seen_dates, f"duplicate date {e['date']}"

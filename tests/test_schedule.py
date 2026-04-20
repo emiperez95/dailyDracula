@@ -66,6 +66,30 @@ def test_format_message_produces_blocks_and_fallback():
     assert any("Bistritz" in b["text"]["text"] for b in body_chunks)
 
 
+def test_format_message_no_audio_block_when_url_missing():
+    entry = {"date": "05-03", "title": "x", "body": "y"}
+    dt = datetime(2026, 5, 3, 10, 0, tzinfo=TZ)
+    _, blocks = format_message(entry, dt, audio_url=None)
+    assert not any(
+        ":headphones:" in el.get("text", "")
+        for b in blocks if b.get("type") == "context"
+        for el in b.get("elements", [])
+    )
+
+
+def test_format_message_includes_audio_link_when_url_given():
+    entry = {"date": "05-03", "title": "x", "body": "y"}
+    dt = datetime(2026, 5, 3, 10, 0, tzinfo=TZ)
+    url = "https://example.com/audio/05-03.mp3"
+    _, blocks = format_message(entry, dt, audio_url=url)
+    assert blocks[-1]["type"] == "context"
+    elements = blocks[-1]["elements"]
+    assert len(elements) == 1
+    text = elements[0]["text"]
+    assert ":headphones:" in text
+    assert url in text
+
+
 def test_format_message_chunks_long_body():
     entry = {"date": "05-03", "title": "x", "body": "word " * 2000}  # ~10k chars
     dt = datetime(2026, 5, 3, 10, 0, tzinfo=TZ)

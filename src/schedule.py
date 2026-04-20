@@ -58,7 +58,11 @@ def chunk_text(s: str, size: int = BLOCK_TEXT_LIMIT) -> list[str]:
 NOVEL_YEAR = 1893  # in-story year for all entries
 
 
-def format_message(entry: dict, post_dt: datetime) -> tuple[str, list[dict]]:
+def format_message(
+    entry: dict,
+    post_dt: datetime,
+    audio_url: str | None = None,
+) -> tuple[str, list[dict]]:
     # %-d is POSIX (macOS/Linux); on Windows we'd need %#d.
     date_label = post_dt.strftime("%-d %B")  # e.g. "3 May"
     body = entry["body"].strip()
@@ -74,6 +78,14 @@ def format_message(entry: dict, post_dt: datetime) -> tuple[str, list[dict]]:
     ]
     for chunk in chunk_text(body):
         blocks.append({"type": "section", "text": {"type": "mrkdwn", "text": chunk}})
+    if audio_url:
+        blocks.append({
+            "type": "context",
+            "elements": [{
+                "type": "mrkdwn",
+                "text": f":headphones: _<{audio_url}|Listen to today's reading>_",
+            }],
+        })
     return fallback_text, blocks
 
 
@@ -107,6 +119,7 @@ def main() -> None:
     channel = os.environ["SLACK_CHANNEL_ID"]
     hour = int(os.environ.get("POST_HOUR_LOCAL", "10"))
     tz = ZoneInfo(os.environ.get("POST_TZ", "America/Montevideo"))
+    audio_base = os.environ.get("AUDIO_BASE_URL", "").rstrip("/") or None
 
     entries = json.loads(DATA_PATH.read_text())
 
@@ -127,7 +140,8 @@ def main() -> None:
             skipped += 1
             continue
         post_dt = datetime.fromtimestamp(post_at, tz)
-        text, blocks = format_message(entry, post_dt)
+        audio_url = f"{audio_base}/{entry['date']}.mp3" if audio_base else None
+        text, blocks = format_message(entry, post_dt, audio_url=audio_url)
         client.schedule_message(channel=channel, text=text, blocks=blocks, post_at=post_at)
         log.info("scheduled %s for %s", entry["date"], post_dt.isoformat())
         scheduled += 1

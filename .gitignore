@@ -13,3 +13,6 @@ venv/
 *.egg-info/
 dist/
 build/
+data/audio_raw/
+data/whisper/
+.claude/

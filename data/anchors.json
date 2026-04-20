@@ -1,0 +1,1248 @@
+[
+  {
+    "date": "05-03",
+    "duration_s": 469.76,
+    "pieces": [
+      {
+        "chapter": 1,
+        "start_s": 27.28,
+        "end_s": 497.04
+      }
+    ],
+    "segment_text": "3rd of May, Bistritz"
+  },
+  {
+    "date": "05-04",
+    "duration_s": 203.68,
+    "pieces": [
+      {
+        "chapter": 1,
+        "start_s": 497.04,
+        "end_s": 700.72
+      }
+    ],
+    "segment_text": "Fourth of May, I felt that my landlord had got a letter from the Count directing him to secure the best place on the coa"
+  },
+  {
+    "date": "05-05",
+    "duration_s": 1997.417,
+    "pieces": [
+      {
+        "chapter": 1,
+        "start_s": 700.72,
+        "end_s": 1987.657
+      },
+      {
+        "chapter": 2,
+        "start_s": 0.0,
+        "end_s": 710.48
+      }
+    ],
+    "segment_text": "Fifth of May, the Castle"
+  },
+  {
+    "date": "05-07",
+    "duration_s": 1001.9,
+    "pieces": [
+      {
+        "chapter": 2,
+        "start_s": 710.48,
+        "end_s": 1712.38
+      }
+    ],
+    "segment_text": "Seventh of May."
+  },
+  {
+    "date": "05-08",
+    "duration_s": 796.924,
+    "pieces": [
+      {
+        "chapter": 2,
+        "start_s": 1712.38,
+        "end_s": 2002.024
+      },
+      {
+        "chapter": 3,
+        "start_s": 0.0,
+        "end_s": 507.28
+      }
+    ],
+    "segment_text": "Eighth of May, I begin to fear as I wrote this book"
+  },
+  {
+    "date": "05-12",
+    "duration_s": 726.96,
+    "pieces": [
+      {
+        "chapter": 3,
+        "start_s": 507.28,
+        "end_s": 1234.24
+      }
+    ],
+    "segment_text": "12th of May."
+  },
+  {
+    "date": "05-15",
+    "duration_s": 930.723,
+    "pieces": [
+      {
+        "chapter": 3,
+        "start_s": 1234.24,
+        "end_s": 2068.663
+      },
+      {
+        "chapter": 4,
+        "start_s": 0.0,
+        "end_s": 96.3
+      }
+    ],
+    "segment_text": "about with terrors that I dare not think of. 15th of May. What's more, I've seen the camp go out in"
+  },
+  {
+    "date": "05-18",
+    "duration_s": 30.66,
+    "pieces": [
+      {
+        "chapter": 4,
+        "start_s": 96.3,
+        "end_s": 126.96
+      }
+    ],
+    "segment_text": "18th of May. I have been down to look at that room again in daylight, for I must know the truth."
+  },
+  {
+    "date": "05-19",
+    "duration_s": 114.74,
+    "pieces": [
+      {
+        "chapter": 4,
+        "start_s": 126.96,
+        "end_s": 241.7
+      }
+    ],
+    "segment_text": "19th of May. I am surely in the toilet."
+  },
+  {
+    "date": "05-28",
+    "duration_s": 242.72,
+    "pieces": [
+      {
+        "chapter": 4,
+        "start_s": 241.7,
+        "end_s": 484.42
+      }
+    ],
+    "segment_text": "28th of May. There is a chance of escape, or in any word being able to send word home."
+  },
+  {
+    "date": "05-31",
+    "duration_s": 59.28,
+    "pieces": [
+      {
+        "chapter": 4,
+        "start_s": 484.42,
+        "end_s": 543.7
+      }
+    ],
+    "segment_text": "31st of May."
+  },
+  {
+    "date": "06-17",
+    "duration_s": 108.62,
+    "pieces": [
+      {
+        "chapter": 4,
+        "start_s": 543.7,
+        "end_s": 652.32
+      }
+    ],
+    "segment_text": "17th of June."
+  },
+  {
+    "date": "06-24",
+    "duration_s": 332.46,
+    "pieces": [
+      {
+        "chapter": 4,
+        "start_s": 652.32,
+        "end_s": 984.78
+      }
+    ],
+    "segment_text": "Twenty-fourth of June, before morning."
+  },
+  {
+    "date": "06-25",
+    "duration_s": 409.24,
+    "pieces": [
+      {
+        "chapter": 4,
+        "start_s": 984.78,
+        "end_s": 1394.02
+      }
+    ],
+    "segment_text": "25th June, morning. No man knows till he has suffered from the night how sweet and how dear to his heart and eye the nex"
+  },
+  {
+    "date": "06-29",
+    "duration_s": 340.38,
+    "pieces": [
+      {
+        "chapter": 4,
+        "start_s": 1394.02,
+        "end_s": 1734.4
+      }
+    ],
+    "segment_text": "Twenty-ninth of June, today is the date of my last letter, and the count has taken steps to prove that it was genuine."
+  },
+  {
+    "date": "06-30",
+    "duration_s": 471.796,
+    "pieces": [
+      {
+        "chapter": 4,
+        "start_s": 1734.4,
+        "end_s": 2191.856
+      },
+      {
+        "chapter": 5,
+        "start_s": 0.0,
+        "end_s": 14.34
+      }
+    ],
+    "segment_text": "30th of June morning."
+  },
+  {
+    "date": "05-09",
+    "duration_s": 344.21,
+    "pieces": [
+      {
+        "chapter": 5,
+        "start_s": 14.34,
+        "end_s": 358.55
+      }
+    ],
+    "segment_text": "9th of May"
+  },
+  {
+    "date": "05-24",
+    "duration_s": 646.43,
+    "pieces": [
+      {
+        "chapter": 5,
+        "start_s": 358.55,
+        "end_s": 1004.98
+      }
+    ],
+    "segment_text": "To Mina Murray, 24th May"
+  },
+  {
+    "date": "05-25",
+    "duration_s": 211.59,
+    "pieces": [
+      {
+        "chapter": 5,
+        "start_s": 1004.98,
+        "end_s": 1216.57
+      }
+    ],
+    "segment_text": "25th of May."
+  },
+  {
+    "date": "05-26",
+    "duration_s": 31.708,
+    "pieces": [
+      {
+        "chapter": 5,
+        "start_s": 1216.57,
+        "end_s": 1235.278
+      },
+      {
+        "chapter": 6,
+        "start_s": 0.0,
+        "end_s": 13.0
+      }
+    ],
+    "segment_text": "Telegram from Alfa Homewood to Quincy P. Morris, 26th May."
+  },
+  {
+    "date": "07-24",
+    "duration_s": 327.68,
+    "pieces": [
+      {
+        "chapter": 6,
+        "start_s": 13.0,
+        "end_s": 340.68
+      }
+    ],
+    "segment_text": "24th of July, Whitby."
+  },
+  {
+    "date": "08-01",
+    "duration_s": 628.36,
+    "pieces": [
+      {
+        "chapter": 6,
+        "start_s": 340.68,
+        "end_s": 969.04
+      }
+    ],
+    "segment_text": "First of August."
+  },
+  {
+    "date": "06-05",
+    "duration_s": 83.82,
+    "pieces": [
+      {
+        "chapter": 6,
+        "start_s": 969.04,
+        "end_s": 1052.86
+      }
+    ],
+    "segment_text": "5th of June"
+  },
+  {
+    "date": "07-01",
+    "duration_s": 80.11,
+    "pieces": [
+      {
+        "chapter": 6,
+        "start_s": 1052.86,
+        "end_s": 1132.97
+      }
+    ],
+    "segment_text": "1st of July"
+  },
+  {
+    "date": "07-08",
+    "duration_s": 47.02,
+    "pieces": [
+      {
+        "chapter": 6,
+        "start_s": 1132.97,
+        "end_s": 1179.99
+      }
+    ],
+    "segment_text": "account as the auditor's put it. 8th of July"
+  },
+  {
+    "date": "07-19",
+    "duration_s": 120.37,
+    "pieces": [
+      {
+        "chapter": 6,
+        "start_s": 1179.99,
+        "end_s": 1300.36
+      }
+    ],
+    "segment_text": "he still brings in the flies by tempting them with his food. 19th of July"
+  },
+  {
+    "date": "07-20",
+    "duration_s": 222.28,
+    "pieces": [
+      {
+        "chapter": 6,
+        "start_s": 1300.36,
+        "end_s": 1522.64
+      }
+    ],
+    "segment_text": "20th of July"
+  },
+  {
+    "date": "07-26",
+    "duration_s": 136.18,
+    "pieces": [
+      {
+        "chapter": 6,
+        "start_s": 1522.64,
+        "end_s": 1658.82
+      }
+    ],
+    "segment_text": "Mina Murray's Journal. 26th of July. I am anxious and it soothes me to express myself here. It is"
+  },
+  {
+    "date": "07-27",
+    "duration_s": 58.76,
+    "pieces": [
+      {
+        "chapter": 6,
+        "start_s": 1658.82,
+        "end_s": 1717.58
+      }
+    ],
+    "segment_text": "27th July, no news from Jonathan. I'm getting quite uneasy about it, though why or should I do not know."
+  },
+  {
+    "date": "08-03",
+    "duration_s": 40.72,
+    "pieces": [
+      {
+        "chapter": 6,
+        "start_s": 1717.58,
+        "end_s": 1758.3
+      }
+    ],
+    "segment_text": "3rd August, another week gone and no news from Jonathan. Not even to Mr Hawkins from whom I have"
+  },
+  {
+    "date": "08-06",
+    "duration_s": 320.219,
+    "pieces": [
+      {
+        "chapter": 6,
+        "start_s": 1758.3,
+        "end_s": 2065.789
+      },
+      {
+        "chapter": 7,
+        "start_s": 0.0,
+        "end_s": 12.73
+      }
+    ],
+    "segment_text": "door and finding it locked. Goes about the room searching for the key. 6th August, another three"
+  },
+  {
+    "date": "08-08",
+    "duration_s": 876.36,
+    "pieces": [
+      {
+        "chapter": 7,
+        "start_s": 12.73,
+        "end_s": 889.09
+      }
+    ],
+    "segment_text": "Chapter 7. Cutting from the Daily Graph, 8th of August."
+  },
+  {
+    "date": "08-09",
+    "duration_s": 962.33,
+    "pieces": [
+      {
+        "chapter": 7,
+        "start_s": 889.09,
+        "end_s": 1851.42
+      }
+    ],
+    "segment_text": "so miraculously into harbour in the storm. Whitby, 9th of August. The sequel to the strange"
+  },
+  {
+    "date": "08-10",
+    "duration_s": 378.929,
+    "pieces": [
+      {
+        "chapter": 7,
+        "start_s": 1851.42,
+        "end_s": 2062.759
+      },
+      {
+        "chapter": 8,
+        "start_s": 0.0,
+        "end_s": 167.59
+      }
+    ],
+    "segment_text": "anxious about him. If I only knew what to do and could do anything. 10th of August the funeral of"
+  },
+  {
+    "date": "08-11",
+    "duration_s": 617.33,
+    "pieces": [
+      {
+        "chapter": 8,
+        "start_s": 167.59,
+        "end_s": 784.92
+      }
+    ],
+    "segment_text": "On the 11th of August, 3am, diary again."
+  },
+  {
+    "date": "08-12",
+    "duration_s": 47.81,
+    "pieces": [
+      {
+        "chapter": 8,
+        "start_s": 784.92,
+        "end_s": 832.73
+      }
+    ],
+    "segment_text": "though I do not expect any trouble tonight. 12th of August. My expectations were wrong. For twice"
+  },
+  {
+    "date": "08-13",
+    "duration_s": 53.17,
+    "pieces": [
+      {
+        "chapter": 8,
+        "start_s": 832.73,
+        "end_s": 885.9
+      }
+    ],
+    "segment_text": "can't alter facts, it can help to make them more bearable. 13th of August."
+  },
+  {
+    "date": "08-14",
+    "duration_s": 215.5,
+    "pieces": [
+      {
+        "chapter": 8,
+        "start_s": 885.9,
+        "end_s": 1101.4
+      }
+    ],
+    "segment_text": "I was sleeping peacefully. She did not stir again all night. 14th of August."
+  },
+  {
+    "date": "08-15",
+    "duration_s": 61.72,
+    "pieces": [
+      {
+        "chapter": 8,
+        "start_s": 1101.4,
+        "end_s": 1163.12
+      }
+    ],
+    "segment_text": "15th August, rose later than usual. Lucy was languid and tired, and slept on after it had"
+  },
+  {
+    "date": "08-17",
+    "duration_s": 232.16,
+    "pieces": [
+      {
+        "chapter": 8,
+        "start_s": 1163.12,
+        "end_s": 1395.28
+      }
+    ],
+    "segment_text": "17th August, no diary for two whole days. I have not had the heart to write."
+  },
+  {
+    "date": "08-21",
+    "duration_s": 33.52,
+    "pieces": [
+      {
+        "chapter": 8,
+        "start_s": 1395.28,
+        "end_s": 1428.8
+      }
+    ],
+    "segment_text": "21st August"
+  },
+  {
+    "date": "08-18",
+    "duration_s": 182.0,
+    "pieces": [
+      {
+        "chapter": 8,
+        "start_s": 1428.8,
+        "end_s": 1610.8
+      }
+    ],
+    "segment_text": "18th August"
+  },
+  {
+    "date": "08-19",
+    "duration_s": 1255.774,
+    "pieces": [
+      {
+        "chapter": 8,
+        "start_s": 1610.8,
+        "end_s": 2320.744
+      },
+      {
+        "chapter": 9,
+        "start_s": 0.0,
+        "end_s": 545.83
+      }
+    ],
+    "segment_text": "19th August. Joy, joy, joy, well not at all joy at last news of Jonathan."
+  },
+  {
+    "date": "08-20",
+    "duration_s": 155.39,
+    "pieces": [
+      {
+        "chapter": 9,
+        "start_s": 545.83,
+        "end_s": 701.22
+      }
+    ],
+    "segment_text": "Dr. Seward Stierry, 20th of August"
+  },
+  {
+    "date": "08-23",
+    "duration_s": 177.42,
+    "pieces": [
+      {
+        "chapter": 9,
+        "start_s": 701.22,
+        "end_s": 878.64
+      }
+    ],
+    "segment_text": "23rd of August, the unexpected always happens."
+  },
+  {
+    "date": "08-25",
+    "duration_s": 144.02,
+    "pieces": [
+      {
+        "chapter": 9,
+        "start_s": 878.64,
+        "end_s": 1022.66
+      }
+    ],
+    "segment_text": "25th August."
+  },
+  {
+    "date": "09-01",
+    "duration_s": 14.87,
+    "pieces": [
+      {
+        "chapter": 9,
+        "start_s": 1022.66,
+        "end_s": 1037.53
+      }
+    ],
+    "segment_text": "1st of September."
+  },
+  {
+    "date": "09-02",
+    "duration_s": 410.45,
+    "pieces": [
+      {
+        "chapter": 9,
+        "start_s": 1037.53,
+        "end_s": 1447.98
+      }
+    ],
+    "segment_text": "Letter from Dr. Seward to Arthur Holmwood, 2nd of September."
+  },
+  {
+    "date": "09-03",
+    "duration_s": 335.76,
+    "pieces": [
+      {
+        "chapter": 9,
+        "start_s": 1447.98,
+        "end_s": 1783.74
+      }
+    ],
+    "segment_text": "3rd of September"
+  },
+  {
+    "date": "09-04",
+    "duration_s": 342.64,
+    "pieces": [
+      {
+        "chapter": 9,
+        "start_s": 1783.74,
+        "end_s": 2126.38
+      }
+    ],
+    "segment_text": "4th of September"
+  },
+  {
+    "date": "09-06",
+    "duration_s": 111.806,
+    "pieces": [
+      {
+        "chapter": 9,
+        "start_s": 2126.38,
+        "end_s": 2151.236
+      },
+      {
+        "chapter": 10,
+        "start_s": 0.0,
+        "end_s": 86.95
+      }
+    ],
+    "segment_text": "6th September, terrible change for the worse"
+  },
+  {
+    "date": "09-07",
+    "duration_s": 937.55,
+    "pieces": [
+      {
+        "chapter": 10,
+        "start_s": 86.95,
+        "end_s": 1024.5
+      }
+    ],
+    "segment_text": "Dr. Seward's Diary, 7th September"
+  },
+  {
+    "date": "09-08",
+    "duration_s": 202.94,
+    "pieces": [
+      {
+        "chapter": 10,
+        "start_s": 1024.5,
+        "end_s": 1227.44
+      }
+    ],
+    "segment_text": "Dr. Searad's diary, continue. 8th of September."
+  },
+  {
+    "date": "09-09",
+    "duration_s": 150.94,
+    "pieces": [
+      {
+        "chapter": 10,
+        "start_s": 1227.44,
+        "end_s": 1378.38
+      }
+    ],
+    "segment_text": "night-mail, and would join me early in the morning. 9th of September. I was pretty tired and worn out"
+  },
+  {
+    "date": "09-10",
+    "duration_s": 445.98,
+    "pieces": [
+      {
+        "chapter": 10,
+        "start_s": 1378.38,
+        "end_s": 1824.36
+      }
+    ],
+    "segment_text": "Thank God, good night Arthur. Dr. Seward's diary, 10th of September."
+  },
+  {
+    "date": "09-11",
+    "duration_s": 328.972,
+    "pieces": [
+      {
+        "chapter": 10,
+        "start_s": 1824.36,
+        "end_s": 2140.552
+      },
+      {
+        "chapter": 11,
+        "start_s": 0.0,
+        "end_s": 12.78
+      }
+    ],
+    "segment_text": "The 11th of September this afternoon I went over to Hillingham, found Van Helsing in excellent"
+  },
+  {
+    "date": "09-12",
+    "duration_s": 67.36,
+    "pieces": [
+      {
+        "chapter": 11,
+        "start_s": 12.78,
+        "end_s": 80.14
+      }
+    ],
+    "segment_text": "12 September."
+  },
+  {
+    "date": "09-13",
+    "duration_s": 302.3,
+    "pieces": [
+      {
+        "chapter": 11,
+        "start_s": 80.14,
+        "end_s": 382.44
+      }
+    ],
+    "segment_text": "13 September."
+  },
+  {
+    "date": "09-17",
+    "duration_s": 104.45,
+    "pieces": [
+      {
+        "chapter": 11,
+        "start_s": 382.44,
+        "end_s": 486.89
+      }
+    ],
+    "segment_text": "17th of September"
+  },
+  {
+    "date": "09-18",
+    "duration_s": 2739.63,
+    "pieces": [
+      {
+        "chapter": 11,
+        "start_s": 486.89,
+        "end_s": 1710.55
+      },
+      {
+        "chapter": 12,
+        "start_s": 0.0,
+        "end_s": 1515.97
+      }
+    ],
+    "segment_text": "The Palmol Gazette, 18th September."
+  },
+  {
+    "date": "09-20",
+    "duration_s": 2342.176,
+    "pieces": [
+      {
+        "chapter": 12,
+        "start_s": 1515.97,
+        "end_s": 2532.676
+      },
+      {
+        "chapter": 13,
+        "start_s": 0.0,
+        "end_s": 1325.47
+      }
+    ],
+    "segment_text": "to John Seward M.D., 20th September. My dear sir, in accordance with your wishes, I enclose the report"
+  },
+  {
+    "date": "09-22",
+    "duration_s": 905.63,
+    "pieces": [
+      {
+        "chapter": 13,
+        "start_s": 1325.47,
+        "end_s": 2231.1
+      }
+    ],
+    "segment_text": "Mina Harker's Journal, 22nd September"
+  },
+  {
+    "date": "09-25",
+    "duration_s": 267.907,
+    "pieces": [
+      {
+        "chapter": 13,
+        "start_s": 2231.1,
+        "end_s": 2439.027
+      },
+      {
+        "chapter": 14,
+        "start_s": 0.0,
+        "end_s": 59.98
+      }
+    ],
+    "segment_text": "25th of September"
+  },
+  {
+    "date": "09-24",
+    "duration_s": 1596.71,
+    "pieces": [
+      {
+        "chapter": 14,
+        "start_s": 59.98,
+        "end_s": 1656.69
+      }
+    ],
+    "segment_text": "24 September."
+  },
+  {
+    "date": "09-26",
+    "duration_s": 1541.786,
+    "pieces": [
+      {
+        "chapter": 14,
+        "start_s": 1656.69,
+        "end_s": 2281.456
+      },
+      {
+        "chapter": 15,
+        "start_s": 0.0,
+        "end_s": 917.02
+      }
+    ],
+    "segment_text": "Dr. Seward's diary, 26 September"
+  },
+  {
+    "date": "09-27",
+    "duration_s": 687.25,
+    "pieces": [
+      {
+        "chapter": 15,
+        "start_s": 917.02,
+        "end_s": 1604.27
+      }
+    ],
+    "segment_text": "27th of September. It was two o'clock before we found a suitable opportunity for our attempt."
+  },
+  {
+    "date": "09-28",
+    "duration_s": 55.46,
+    "pieces": [
+      {
+        "chapter": 15,
+        "start_s": 1604.27,
+        "end_s": 1659.73
+      }
+    ],
+    "segment_text": "Dr. Seward's story, 28th September"
+  },
+  {
+    "date": "09-29",
+    "duration_s": 3823.71,
+    "pieces": [
+      {
+        "chapter": 15,
+        "start_s": 1659.73,
+        "end_s": 2177.202
+      },
+      {
+        "chapter": 16,
+        "start_s": 0.0,
+        "end_s": 1751.589
+      },
+      {
+        "chapter": 17,
+        "start_s": 0.0,
+        "end_s": 1554.65
+      }
+    ],
+    "segment_text": "I may get some light on the mystery. 29th September, morning"
+  },
+  {
+    "date": "09-30",
+    "duration_s": 2324.916,
+    "pieces": [
+      {
+        "chapter": 17,
+        "start_s": 1554.65,
+        "end_s": 2066.756
+      },
+      {
+        "chapter": 18,
+        "start_s": 0.0,
+        "end_s": 1812.81
+      }
+    ],
+    "segment_text": "into order. Meena Harker's journal, 30th of September. I am so glad that I hardly know how to"
+  },
+  {
+    "date": "10-01",
+    "duration_s": 2752.909,
+    "pieces": [
+      {
+        "chapter": 18,
+        "start_s": 1812.81,
+        "end_s": 2549.029
+      },
+      {
+        "chapter": 19,
+        "start_s": 0.0,
+        "end_s": 2016.69
+      }
+    ],
+    "segment_text": "Dr. Seward's diary. 1st of October, 4am."
+  },
+  {
+    "date": "10-02",
+    "duration_s": 2378.395,
+    "pieces": [
+      {
+        "chapter": 19,
+        "start_s": 2016.69,
+        "end_s": 2148.18
+      },
+      {
+        "chapter": 20,
+        "start_s": 0.0,
+        "end_s": 2233.025
+      },
+      {
+        "chapter": 21,
+        "start_s": 0.0,
+        "end_s": 13.88
+      }
+    ],
+    "segment_text": "tired me more than if I had not slept at all. 2nd of October, 10 p.m. Last night I slept,"
+  },
+  {
+    "date": "10-03",
+    "duration_s": 5833.317,
+    "pieces": [
+      {
+        "chapter": 21,
+        "start_s": 13.88,
+        "end_s": 2293.316
+      },
+      {
+        "chapter": 22,
+        "start_s": 0.0,
+        "end_s": 1971.801
+      },
+      {
+        "chapter": 23,
+        "start_s": 0.0,
+        "end_s": 1582.08
+      }
+    ],
+    "segment_text": "3 October."
+  },
+  {
+    "date": "10-04",
+    "duration_s": 780.106,
+    "pieces": [
+      {
+        "chapter": 23,
+        "start_s": 1582.08,
+        "end_s": 2089.326
+      },
+      {
+        "chapter": 24,
+        "start_s": 0.0,
+        "end_s": 272.86
+      }
+    ],
+    "segment_text": "Fourth of October morning. Once again during the night I was awakened by Mina. This time we"
+  },
+  {
+    "date": "10-05",
+    "duration_s": 1677.68,
+    "pieces": [
+      {
+        "chapter": 24,
+        "start_s": 272.86,
+        "end_s": 1950.54
+      }
+    ],
+    "segment_text": "5 October 5pm Our meeting for report. Present, Professor Van Helsing, Lord Godelman,"
+  },
+  {
+    "date": "10-06",
+    "duration_s": 416.232,
+    "pieces": [
+      {
+        "chapter": 24,
+        "start_s": 1950.54,
+        "end_s": 2353.162
+      },
+      {
+        "chapter": 25,
+        "start_s": 0.0,
+        "end_s": 13.61
+      }
+    ],
+    "segment_text": "6 October morning Another surprise. Mina woke me early about the"
+  },
+  {
+    "date": "10-11",
+    "duration_s": 659.23,
+    "pieces": [
+      {
+        "chapter": 25,
+        "start_s": 13.61,
+        "end_s": 672.84
+      }
+    ],
+    "segment_text": "Chapter 25. Dr. Seward's Diary. 11th October. Evening."
+  },
+  {
+    "date": "10-15",
+    "duration_s": 226.56,
+    "pieces": [
+      {
+        "chapter": 25,
+        "start_s": 672.84,
+        "end_s": 899.4
+      }
+    ],
+    "segment_text": "15th October, Varna. We left Charing Cross on the morning of the 12th, got to Paris the"
+  },
+  {
+    "date": "10-16",
+    "duration_s": 24.16,
+    "pieces": [
+      {
+        "chapter": 25,
+        "start_s": 899.4,
+        "end_s": 923.56
+      }
+    ],
+    "segment_text": "16th October. Mina's report is still the same. Lapping waves, rushing water, darkness and favouring winds."
+  },
+  {
+    "date": "10-17",
+    "duration_s": 110.1,
+    "pieces": [
+      {
+        "chapter": 25,
+        "start_s": 923.56,
+        "end_s": 1033.66
+      }
+    ],
+    "segment_text": "17th October. Everything is pretty well fixed now, I think, to welcome the Count on his return from his tour."
+  },
+  {
+    "date": "10-24",
+    "duration_s": 39.31,
+    "pieces": [
+      {
+        "chapter": 25,
+        "start_s": 1033.66,
+        "end_s": 1072.97
+      }
+    ],
+    "segment_text": "24th October, a whole week of waiting, daily kilograms to Godelming, but only the same story not yet reported."
+  },
+  {
+    "date": "10-25",
+    "duration_s": 236.95,
+    "pieces": [
+      {
+        "chapter": 25,
+        "start_s": 1072.97,
+        "end_s": 1309.92
+      }
+    ],
+    "segment_text": "Dr. Seward's Diary, 25th October. How I miss my phonograph. To write a diary with a pen is irksome to me."
+  },
+  {
+    "date": "10-26",
+    "duration_s": 37.46,
+    "pieces": [
+      {
+        "chapter": 25,
+        "start_s": 1309.92,
+        "end_s": 1347.38
+      }
+    ],
+    "segment_text": "26th October. Another day and no tidings of the Tsarina Catherine. She ought to be here by now."
+  },
+  {
+    "date": "10-27",
+    "duration_s": 52.06,
+    "pieces": [
+      {
+        "chapter": 25,
+        "start_s": 1347.38,
+        "end_s": 1399.44
+      }
+    ],
+    "segment_text": "27th October. Noon. Most strange. No news yet of the ship. We wait for Mrs Harker's report at last night, and this morni"
+  },
+  {
+    "date": "10-28",
+    "duration_s": 1075.198,
+    "pieces": [
+      {
+        "chapter": 25,
+        "start_s": 1399.44,
+        "end_s": 2458.018
+      },
+      {
+        "chapter": 26,
+        "start_s": 0.0,
+        "end_s": 16.62
+      }
+    ],
+    "segment_text": "28th October. Telegram Rufus Smith London to Lord Golluming, care of HBM Vice-Council, Varna."
+  },
+  {
+    "date": "10-29",
+    "duration_s": 405.58,
+    "pieces": [
+      {
+        "chapter": 26,
+        "start_s": 16.62,
+        "end_s": 422.2
+      }
+    ],
+    "segment_text": "29 October."
+  },
+  {
+    "date": "10-30",
+    "duration_s": 1959.36,
+    "pieces": [
+      {
+        "chapter": 26,
+        "start_s": 422.2,
+        "end_s": 2381.56
+      }
+    ],
+    "segment_text": "30th of October, 7am. We are near Gullatts now and I may have time to write later."
+  },
+  {
+    "date": "10-31",
+    "duration_s": 33.69,
+    "pieces": [
+      {
+        "chapter": 26,
+        "start_s": 2381.56,
+        "end_s": 2415.25
+      }
+    ],
+    "segment_text": "31st of October, still hurrying along. The day has come, and Godelman is sleeping. I am on watch."
+  },
+  {
+    "date": "11-01",
+    "duration_s": 90.16,
+    "pieces": [
+      {
+        "chapter": 26,
+        "start_s": 2415.25,
+        "end_s": 2505.41
+      }
+    ],
+    "segment_text": "electric lamp on them, and fell on their knees and prayed. 1st of November, evening,"
+  },
+  {
+    "date": "11-02",
+    "duration_s": 121.91,
+    "pieces": [
+      {
+        "chapter": 26,
+        "start_s": 2505.41,
+        "end_s": 2627.32
+      }
+    ],
+    "segment_text": "for all his goodness to poor D'Amino and me. 2nd of November morning. Broad daylight. That good"
+  },
+  {
+    "date": "11-03",
+    "duration_s": 20.06,
+    "pieces": [
+      {
+        "chapter": 26,
+        "start_s": 2627.32,
+        "end_s": 2647.38
+      }
+    ],
+    "segment_text": "Third of November. We heard at Fundu that the launch had gone up the bestritzer. I wish it"
+  },
+  {
+    "date": "11-04",
+    "duration_s": 1612.099,
+    "pieces": [
+      {
+        "chapter": 26,
+        "start_s": 2647.38,
+        "end_s": 2832.509
+      },
+      {
+        "chapter": 27,
+        "start_s": 0.0,
+        "end_s": 1426.97
+      }
+    ],
+    "segment_text": "Fourth of November. Today we heard of the launch having been detained by accident when trying to"
+  },
+  {
+    "date": "11-05",
+    "duration_s": 564.72,
+    "pieces": [
+      {
+        "chapter": 27,
+        "start_s": 1426.97,
+        "end_s": 1991.69
+      }
+    ],
+    "segment_text": "Dr. Seward's diary, 5th of November."
+  },
+  {
+    "date": "11-06",
+    "duration_s": 1081.877,
+    "pieces": [
+      {
+        "chapter": 27,
+        "start_s": 1991.69,
+        "end_s": 3073.567
+      }
+    ],
+    "segment_text": "Mina Harker's Journal, 6th of November"
+  }
+]

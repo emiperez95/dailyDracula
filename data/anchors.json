@@ -1,36 +1,36 @@
 [
   {
     "date": "05-03",
-    "duration_s": 469.76,
+    "duration_s": 469.6,
     "pieces": [
       {
         "chapter": 1,
-        "start_s": 27.28,
-        "end_s": 497.04
+        "start_s": 27.32,
+        "end_s": 496.92
       }
     ],
-    "segment_text": "3rd of May, Bistritz"
+    "segment_text": "3rd of May, Bistritz."
   },
   {
     "date": "05-04",
-    "duration_s": 203.68,
+    "duration_s": 204.1,
     "pieces": [
       {
         "chapter": 1,
-        "start_s": 497.04,
-        "end_s": 700.72
+        "start_s": 496.92,
+        "end_s": 701.02
       }
     ],
     "segment_text": "Fourth of May, I felt that my landlord had got a letter from the Count directing him to secure the best place on the coa"
   },
   {
     "date": "05-05",
-    "duration_s": 1997.417,
+    "duration_s": 1980.686,
     "pieces": [
       {
         "chapter": 1,
-        "start_s": 700.72,
-        "end_s": 1987.657
+        "start_s": 701.02,
+        "end_s": 1971.226
       },
       {
         "chapter": 2,
@@ -38,7 +38,7 @@
         "end_s": 710.48
       }
     ],
-    "segment_text": "Fifth of May, the Castle"
+    "segment_text": "Fifth of May, the castle."
   },
   {
     "date": "05-07",

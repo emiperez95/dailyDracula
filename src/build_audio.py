@@ -34,13 +34,19 @@ ANCHORS_PATH = DATA_DIR / "anchors.json"
 DRACULA_PATH = DATA_DIR / "dracula.json"
 
 CHAPTERS = range(1, 28)  # 27 chapters
-URL_TEMPLATE = (
-    "https://www.archive.org/download/dracula_version_5_2012_librivox/"
-    "dracula_{nn}_stoker_64kb.mp3"
-)
+
+# Ch01's `_64kb` file in the v5 archive item is mis-uploaded v2 (dramatic
+# reading) content. The non-suffixed file is the correct Keeble v5 reading.
+# Chapters 02–27's `_64kb` files are the correct v5 reading.
+def _chapter_url(n: int) -> str:
+    base = "https://www.archive.org/download/dracula_version_5_2012_librivox"
+    filename = "dracula_01_stoker.mp3" if n == 1 else f"dracula_{n:02d}_stoker_64kb.mp3"
+    return f"{base}/{filename}"
 
 
 def chapter_raw_path(n: int) -> Path:
+    # Keep the _64kb filename for ch01 locally for consistency with phases B-D,
+    # even though the source URL differs.
     return RAW_DIR / f"dracula_{n:02d}_stoker_64kb.mp3"
 
 
@@ -57,7 +63,7 @@ def download_chapter(n: int) -> None:
     if dest.exists() and dest.stat().st_size > 1_000_000:
         log.info("[A] ch%02d already downloaded (%d bytes), skipping", n, dest.stat().st_size)
         return
-    url = URL_TEMPLATE.format(nn=f"{n:02d}")
+    url = _chapter_url(n)
     log.info("[A] downloading ch%02d from %s", n, url)
     tmp = dest.with_suffix(".mp3.part")
     with requests.get(url, stream=True, timeout=120) as r:
